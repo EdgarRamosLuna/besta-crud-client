@@ -87,7 +87,7 @@ const Form = ({ id }) => {
         )}
       </div>
       <div className="form-container">
-        <input
+        <textarea
           type="text"
           placeholder="Descripcion"
           {...register("description", {
@@ -95,7 +95,7 @@ const Form = ({ id }) => {
           })}
           className={`w-full bg-transparent border-[1px] border-zinc-500 p-[5px] ${
             errors.description && "border-red-500"
-          } outline-0	rounded-md`}
+          } outline-0	rounded-md resize-none h-[130px]`}
         />
         {errors.description && (
           <span className="text-red-500">Este campo es requerido</span>
