@@ -9,6 +9,8 @@ function App() {
       <Routes>
         <Route element={<Header />}>
           <Route exact path="/" element={<Home />} />
+          <Route exact path="/completed" element={<Home />} />
+
         </Route>
       </Routes>
       <Toaster richColors position={'top-right'} closeButton />
